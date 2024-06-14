@@ -10,7 +10,7 @@ const emit = defineEmits(['newTransaction'])
 
 function handleSubmit() {
     if (!(date.value && description.value && amount.value && category.value)) {
-        showToast("Error", "All fields are required", false);
+        showToast("", "All fields are required", false);
         return;
     }
     emit('newTransaction', {
